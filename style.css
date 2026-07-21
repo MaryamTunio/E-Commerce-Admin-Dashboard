@@ -1,0 +1,167 @@
+/* Base Background Mesh Gradient matching the image precisely */
+body {
+    background: radial-gradient(circle at 50% 35%, rgba(184, 38, 63, 0.45) 0%, rgba(33, 23, 54, 0.98) 55%),
+                radial-gradient(circle at 85% 85%, rgba(106, 137, 204, 0.5) 0%, rgba(12, 10, 24, 1) 70%);
+    background-attachment: fixed;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Sidebar Styling Adaptations for Dark Theme */
+.sidebar {
+    width: 260px;
+    min-height: 100vh;
+    z-index: 1030;
+    background: rgba(18, 14, 31, 0.7) !important;
+    backdrop-filter: blur(20px);
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+.sidebar .nav-link {
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    transition: all 0.2s ease;
+}
+.sidebar .nav-link.active, .sidebar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: #ffffff !important;
+}
+
+/* Glassmorphism Card Frame Structure */
+.glass-profile-card {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(35px) saturate(120%);
+    -webkit-backdrop-filter: blur(35px) saturate(120%);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 40px; /* Sweeping curved border radiuses like the snapshot */
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
+    width: 100%;
+}
+
+/* Dashboard Metric Glass Cards Overlay styling */
+.kpi-card, .chart-card {
+    background: rgba(255, 255, 255, 0.04) !important;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 16px !important;
+}
+.bg-glass-icon { background: rgba(255, 255, 255, 0.08); }
+.date-select-glass, .btn-glass-primary {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+}
+.date-select-glass option { background: #211736; }
+
+/* Profile Avatar Frame Alignment layout */
+.profile-avatar-wrapper {
+    width: 140px;
+    height: 140px;
+    position: relative;
+}
+.profile-avatar-circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+
+/* Underline Form Input Elements Implementation */
+.form-group-underline {
+    position: relative;
+}
+.input-with-icon {
+    display: flex;
+    align-items: center;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.4);
+    padding-bottom: 6px;
+    transition: border-color 0.3s ease;
+}
+.input-with-icon:focus-within {
+    border-bottom-color: #ffffff;
+}
+.input-icon {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.8);
+    width: 30px;
+    text-align: left;
+}
+.glass-input {
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    color: #ffffff !important;
+    width: 100%;
+    font-size: 1.05rem;
+    padding-left: 5px;
+}
+.glass-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 300;
+}
+
+/* Submission Action Button holding the precise color map transition gradient */
+.btn-login-gradient {
+    background: linear-gradient(to right, #4c0527 0%, #43125c 35%, #5069cc 100%);
+    border: none;
+    color: white;
+    padding: 14px 0;
+    font-size: 1.05rem;
+    border-radius: 16px;
+    letter-spacing: 2px;
+    transition: opacity 0.2s ease;
+}
+.btn-login-gradient:hover {
+    opacity: 0.9;
+    color: white;
+}
+
+/* Invalid State Management Indicators */
+.form-group-underline.invalid .input-with-icon {
+    border-bottom-color: #ffc107 !important;
+}
+
+/* Alert Banner Feedback Override */
+.alert-glass-success {
+    background: rgba(25, 135, 84, 0.2);
+    border: 1px solid rgba(25, 135, 84, 0.4);
+    color: #fff;
+    border-radius: 12px;
+}
+
+/* Global Screen Loader Theme mapping adjustments */
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #120a1c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    height: 320px;
+}
+
+@media(min-width: 992px) {
+    .offcanvas-lg {
+        position: sticky;
+        top: 0;
+        display: block !important;
+        transform: none !important;
+        visibility: visible !important;
+    }
+}

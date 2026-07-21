@@ -1,0 +1,19 @@
+{
+  "revenue": 14250,
+  "orders": 348,
+  "customers": 289,
+  "conversion": "3.4%",
+  "weeklySales": [1200, 1900, 1500, 2100, 1800, 2400, 3100],
+  "products": {
+    "Wireless Earbuds": 120,
+    "Smart Watch": 95,
+    "Leather Wallet": 80,
+    "Running Shoes": 53
+  },
+  "traffic": {
+    "Direct": 40,
+    "Social Media": 30,
+    "Search Engines": 20,
+    "Referrals": 10
+  }
+}
